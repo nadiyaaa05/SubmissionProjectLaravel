@@ -1,0 +1,1 @@
+{{ "Angka yang diambil: " .$data }}<br>

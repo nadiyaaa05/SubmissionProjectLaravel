@@ -80,3 +80,9 @@ Route::fallback(function(){
 Route::get('/produk',[ProdukController::class,'index'])->name('produk.index');
 Route::get('/produk/{id}',[ProdukController::class,'show'])->name('produk.show');
 Route::resource('produk', ProdukController::class);
+
+/*Route::get('/produk/{id}', function ($id) {
+    return 'Produk #' . $id;
+});*/
+
+Route::get('/produk/{id}', [ProdukController::class,'show']);
